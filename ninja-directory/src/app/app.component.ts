@@ -9,4 +9,18 @@ export class AppComponent {
   // properties
   title = 'Hola';
   name = 'Ninja';
+
+  // Sharing this variable to other component
+  // variable
+  lastName: string;
+
+  // Object
+  myObject = {
+    name: "Efrain",
+    belt: "Red"
+  };
+
+  constructor() {
+    this.lastName = 'Zamora';
+  }
 }

@@ -1,5 +1,5 @@
 // Dependencies
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +21,9 @@ export class HomeComponent implements OnInit {
   alertMe(value) {
     alert(value);
   }
+
+  @Input() last; // this component is receiving the data - last variable
+  @Input() theObject; // this component is receiving the data - last variable
 
   constructor() { }
 
