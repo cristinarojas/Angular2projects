@@ -1,5 +1,5 @@
 // Dependencies
-import { Component, OnInit,  Input } from '@angular/core';
+import { Component, OnInit,  Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -24,6 +24,12 @@ export class HomeComponent implements OnInit {
 
   @Input() last; // this component is receiving the data - last variable
   @Input() theObject; // this component is receiving the data - last variable
+
+  @Output() onYell = new EventEmitter(); // Going to emmit to onYell event.
+
+  fireYellEvent(e) {
+    this.onYell.emit(e);
+  }
 
   constructor() { }
 

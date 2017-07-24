@@ -20,6 +20,11 @@ export class AppComponent {
     belt: "Red"
   };
 
+  yell(e){
+    alert('I am yelling');
+    console.log(e);
+  }
+
   constructor() {
     this.lastName = 'Zamora';
   }
