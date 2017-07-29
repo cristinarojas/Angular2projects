@@ -8,10 +8,11 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./directory.component.css']
 })
 export class DirectoryComponent implements OnInit {
-  param: string;
+  icecreamType: string;
 
   constructor(private route: ActivatedRoute) {
-    this.param = route.snapshot.params['param'];
+    console.log(route.snapshot.params);
+    this.icecreamType = route.snapshot.params.icecreamType;
   }
 
   ngOnInit() {

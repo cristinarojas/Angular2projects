@@ -21,7 +21,7 @@ import { DirectoryComponent } from './directory/directory.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'directory', component: DirectoryComponent },
-      { path: 'directory/:param', component: DirectoryComponent },
+      { path: 'icecream/:icecreamType', component: DirectoryComponent },
       // { path: '**', component: PageNotFoundComponent }
     ])
   ],
