@@ -20,7 +20,8 @@ import { DirectoryComponent } from './directory/directory.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'directory', component: DirectoryComponent },
+      { path: 'directory', component: HomeComponent },
+      { path: 'directory/:param', component: DirectoryComponent },
       // { path: '**', component: PageNotFoundComponent }
     ])
   ],
