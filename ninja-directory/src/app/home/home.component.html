@@ -1,28 +1,30 @@
-<p>
-  {{homeTitle}}
-</p>
+<div id="#main">
+  <p>
+    {{homeTitle}}
+  </p>
+</div>
 
-<!-- Data binding One direcction - Property binding -->
+<!-- Data binding One direcction - Property binding
 <p>Data binding One direcction - Property binding </p>
-<input value="Static value" /> <!-- static value -->
+<input value="Static value" />  static value
 
 <p>Dinamic value binding from the property</p>
-<input [value]="dinamicValue" /> <!-- dinamic value binding from the property  -->
-<input [required]="myBoolean" /> <!-- passing boolean values -->
+<input [value]="dinamicValue" /> dinamic value binding from the property
+<input [required]="myBoolean" /> passing boolean values
 
 <p>Data binding One direcction - String binding</p>
-<!-- Data binding One direcction - String binding -->
-<input value="{{stringValue}}" /> <!-- dinamic value binding from the property  -->
-<input required="{{stringBoolean}}" /> <!-- passing boolean values -->
+ Data binding One direcction - String binding
+<input value="{{stringValue}}" /> dinamic value binding from the property
+<input required="{{stringBoolean}}" />  passing boolean values
 
 <p>Data binding One direcction - Event binding view to the model</p>
-<!-- Data binding One direcction - Event binding view to the model-->
+ Data binding One direcction - Event binding view to the model
 <button (click)="alertMe('I love my brothers')">Click me</button>
 
 <p>Two way data biding Two directions/ in the same component</p>
-<!-- Two way data biding Two directions -->
-<input [(ngModel)]="ninja.name" /><!-- Import FormsModule on the module.ts ngModel live there -->
-<p>{{ninja.name}}</p> <!-- The users can update this values -->
+ Two way data biding Two directions
+<input [(ngModel)]="ninja.name" /> Import FormsModule on the module.ts ngModel live there
+<p>{{ninja.name}}</p>  The users can update this values
 <p>{{ninja.belt}}</p>
 
 <p>Share data between components with variables</p>
@@ -32,6 +34,6 @@
 <p>{{theObject.belt}}</p>
 
 <p>Share data between components child component to parent component</p>
-<button (click)="fireYellEvent($event)">Click me</button>
+<button (click)="fireYellEvent($event)">Click me</button> -->
 
 

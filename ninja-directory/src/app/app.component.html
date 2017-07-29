@@ -1,13 +1,14 @@
 <header>
   <h1>{{title}}</h1>
   <nav>
-    <a routerLink="/" routerLinkActive="active">Home</a>
-    <a routerLink="/directory" routerLinkActive="active">Directory</a>
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/directory" routerLinkActive="active">Directory</a></li>
+    </ul>
   </nav>
-  <router-outlet></router-outlet>﻿
 </header>
 <section id="main">
-  <app-home [theObject]="myObject" (onYell)="yell($event)"></app-home> <!-- listen to that custom event to be in fired -->
-
+  <!--<app-home [theObject]="myObject" (onYell)="yell($event)"></app-home>  listen to that custom event to be in fired -->
   <!--<app-home [last]="lastName"></app-home> -->
+  <router-outlet></router-outlet>﻿
 </section>
