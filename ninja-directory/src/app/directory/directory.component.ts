@@ -9,6 +9,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DirectoryComponent implements OnInit {
   icecreamType: string;
+  classes = {'blue': false, 'red': true, 'underline': true};
+  test = false;
+  ninjas = [
+    {name: "Yoshi", belt: "black"},
+    {name: "Cristina", belt: "red"},
+    {name: "Carlos", belt: "purple"}
+    ];
 
   constructor(private route: ActivatedRoute) {
     console.log(route.snapshot.params);

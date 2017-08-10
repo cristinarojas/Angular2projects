@@ -1,0 +1,22 @@
+#main {
+  p {
+    color: red;
+  }
+}
+
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.purple {
+  color: purple;
+}
+
+.underline {
+  text-decoration: underline;
+}
